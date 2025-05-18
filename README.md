@@ -101,10 +101,10 @@ We use a **realistic transaction dataset** from Kaggle and enrich it by:
 
 ## 🧪 Example Reconciliation Outcomes
 
-transaction_id amount gateway_id reconciliation_result
-txn_12345 100.00 gateway_a RECONCILED
-txn_777_FAKE 100.00 gateway_b MISSING
-txn_54321 125.00 gateway_c DISCREPANCY
+     transaction_id amount gateway_id reconciliation_result
+     txn_12345 100.00 gateway_a RECONCILED
+     txn_777_FAKE 100.00 gateway_b MISSING
+     txn_54321 125.00 gateway_c DISCREPANCY
 
 ---
 
