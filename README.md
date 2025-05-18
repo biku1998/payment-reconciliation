@@ -147,26 +147,34 @@ This loads the ledger and waits for webhook pushes.
 
 ## 📁 Project Structure
 
-    project-root/
-    ├── enrich-ledger/
-    │ ├── enrich.ts
-    │ └── financial_transactions.csv
-    │
-    ├── gateway-a.ts
-    ├── gateway-b.ts
-    ├── gateway-c.ts
-    ├── shared.ts
-    │
-    ├── src/
-    │ ├── index.ts # Webhook server
-    │ ├── validator.ts # Zod schemas
-    │ ├── normalizer.ts # Schema transformations
-    │ ├── ledger.ts # In-memory ledger map
-    │ ├── logger.ts # CSV logging
-    │ └── queue.ts # (optional) async queue
-    │
+    PAYMENT-RECONCILIATION/
+    ├── dist/
     ├── logs/
     │ └── reconciliation_results.csv
+    ├── src/
+    │ ├── enrich-ledger/
+    │ │ ├── enrich.ts
+    │ │ ├── enriched_transactions.csv
+    │ │ └── financial_transactions.csv
+    │ ├── payment-gateways/
+    │ │ ├── gateway-a.ts
+    │ │ ├── gateway-b.ts
+    │ │ ├── gateway-c.ts
+    │ │ ├── index.ts
+    │ │ └── shared.ts
+    │ ├── index.ts
+    │ ├── ledger.ts
+    │ ├── logger.ts
+    │ ├── normalizer.ts
+    │ ├── queue.ts
+    │ ├── schemas.ts
+    │ ├── types.ts
+    │ └── validator.ts
+    ├── .gitignore
+    ├── package-lock.json
+    ├── package.json
+    ├── README.md
+    └── tsconfig.json
 
 ## 📈 What This Project Teaches
 
